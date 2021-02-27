@@ -1,0 +1,79 @@
+.painting-card-body {
+  height: 372px;
+  width: 350px;
+  margin: 10px;
+  border: 1px solid black;
+  transition: 0.3s;
+  position: relative;
+  display: block;
+}
+.painting-card-body:hover {
+  box-shadow: 1px 1px 3px black;
+  transform: scale(1.025);
+}
+.painting-card-img-link {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+.painting-card-img-link img {
+  display: block;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.painting-card-info-text {
+  font-family: "Roboto", "open-sans";
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e9e7e2;
+  overflow: hidden;
+}
+.painting-card-price-holder {
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  display: none;
+  background: white;
+}
+.painting-card-price-holder-sold {
+  display: block;
+}
+.painting-card-price {
+  display: block;
+}
+
+@media only screen and (max-width: 775px) {
+  .painting-card-body {
+    height: 320px;
+    width: 45%;
+  }
+  .painting-card-img-link img {
+    height: calc(320px - 70px);
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .painting-card-body {
+    height: 270px;
+    width: calc(50% - 4px);
+    margin: 2px;
+  }
+  .painting-card-img-link img {
+    height: 200px;
+    width: 100%;
+  }
+  .gallery-holder {
+    padding: 1px;
+  }
+  .painting-card-info-text {
+    text-align: center;
+  }
+}

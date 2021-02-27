@@ -1,0 +1,26 @@
+.cart-item-link {
+  font-weight: bold;
+}
+.cart-item-thumbnail {
+  height: 100px;
+  border: 1px solid black;
+}
+.checkout-main-buttons-holder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 870px) {
+  .checkout-main-buttons-holder {
+    flex-direction: column;
+  }
+  .checkout-main-buttons-holder button {
+    margin-bottom: 10px;
+  }
+}
+/* @media only screen and (max-width: 400px) {
+  .cart-item-thumbnail {
+    height: 50px;
+  }
+} */
